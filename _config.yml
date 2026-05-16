@@ -1,0 +1,45 @@
+title: "Conecta Solutions"
+description: "Infraestructura, ciencia de datos e inteligencia artificial para empresas que quieren crecer con solidez tecnológica."
+tagline: "Infraestructura sólida. Datos inteligentes. IA aplicada."
+url: "https://conectasolutions.com"
+baseurl: ""
+author:
+  name: "Conecta Solutions"
+  email: "hola@conectasolutions.com"
+  twitter: "conectasolutions"
+  linkedin: "conectasolutions"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Conecta Solutions"
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md

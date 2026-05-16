@@ -1,0 +1,37 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <span class="logo-mark">CS</span>
+        <span class="logo-text">Conecta<strong>Solutions</strong></span>
+      </a>
+      <p class="footer-tagline">{{ site.tagline }}</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navegar</h4>
+        <a href="{{ '/' | relative_url }}">Inicio</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ '/sobre-nosotros/' | relative_url }}">Nosotros</a>
+        <a href="{{ '/contacto/' | relative_url }}">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Conectar</h4>
+        {% if site.author.twitter %}
+          <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">Twitter / X</a>
+        {% endif %}
+        {% if site.author.linkedin %}
+          <a href="https://linkedin.com/company/{{ site.author.linkedin }}" target="_blank">LinkedIn</a>
+        {% endif %}
+        {% if site.author.email %}
+          <a href="mailto:{{ site.author.email }}">Email</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© {{ 'now' | date: "%Y" }} Conecta Solutions. Todos los derechos reservados.</p>
+  </div>
+</footer>

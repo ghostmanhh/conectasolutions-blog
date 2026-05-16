@@ -1,0 +1,54 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-header">
+  <div class="container">
+    <h1>Blog técnico</h1>
+    <p>Artículos sobre datos, sistemas, automatización y tecnología empresarial.</p>
+  </div>
+</div>
+
+<div class="blog-list">
+  <div class="container">
+    {% for post in paginator.posts %}
+    <a class="blog-list-item" href="{{ post.url | relative_url }}">
+      <div class="blog-item-date">
+        {{ post.date | date: "%-d %b\n%Y" }}
+      </div>
+      <div class="blog-item-content">
+        <div class="blog-item-category">
+          {% if post.categories.first %}{{ post.categories.first }}{% else %}Artículo{% endif %}
+        </div>
+        <div class="blog-item-title">{{ post.title }}</div>
+        <div class="blog-item-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</div>
+      </div>
+    </a>
+    {% endfor %}
+
+    <!-- Pagination -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&larr;</a>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="current">{{ page }}</span>
+        {% elsif page == 1 %}
+          <a href="/blog/">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">&rarr;</a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>

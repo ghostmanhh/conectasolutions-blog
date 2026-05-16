@@ -1,0 +1,96 @@
+---
+layout: default
+title: Inicio
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Blog técnico · Conecta Solutions</span>
+    <h1>Infraestructura sólida.<br><em>Datos inteligentes.</em><br>IA aplicada.</h1>
+    <p class="hero-lead">
+      Escribimos sobre redes, servidores, ciencia de datos e inteligencia artificial
+      desde la trinchera: experiencias reales, sin relleno teórico.
+    </p>
+    <div class="hero-actions">
+      <a href="/blog/" class="btn btn-primary">Leer el blog →</a>
+      <a href="/sobre-nosotros/" class="btn btn-secondary">Quiénes somos</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Post -->
+{% assign featured = site.posts.first %}
+{% if featured %}
+<section class="featured-strip">
+  <div class="container">
+    <div class="section-label">Artículo destacado</div>
+    <div class="featured-post">
+      <div class="featured-post-content">
+        <div class="featured-category">
+          {% if featured.categories.first %}{{ featured.categories.first }}{% else %}Artículo{% endif %}
+        </div>
+        <h2 class="featured-title">
+          <a href="{{ featured.url | relative_url }}">{{ featured.title }}</a>
+        </h2>
+        <p class="featured-excerpt">
+          {{ featured.excerpt | strip_html | truncate: 160 }}
+        </p>
+        <div class="featured-meta">
+          {{ featured.date | date: "%-d %b %Y" }}
+          {% if featured.read_time %} · {{ featured.read_time }} min de lectura{% endif %}
+        </div>
+      </div>
+      <div class="featured-post-image">
+        {% if featured.image %}
+          <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}">
+        {% else %}
+          <div class="featured-placeholder">CS</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Topics strip -->
+<section class="topics-strip">
+  <div class="container">
+    <div class="section-label">Temas que cubrimos</div>
+    <div class="topics-grid">
+      <div class="topic-chip">🖥️ Servidores &amp; SO</div>
+      <div class="topic-chip">🌐 Redes &amp; Infraestructura</div>
+      <div class="topic-chip">📊 Ciencia de Datos</div>
+      <div class="topic-chip">🤖 Inteligencia Artificial</div>
+      <div class="topic-chip">🔒 Seguridad</div>
+      <div class="topic-chip">⚙️ Automatización</div>
+    </div>
+  </div>
+</section>
+
+<!-- Post Grid -->
+<section class="post-grid-section">
+  <div class="container">
+    <div class="section-label">Últimas publicaciones</div>
+    <div class="post-grid">
+      {% for post in site.posts limit:6 offset:1 %}
+      <div class="post-card">
+        <div class="post-card-category">
+          {% if post.categories.first %}{{ post.categories.first }}{% else %}Blog{% endif %}
+        </div>
+        <h3 class="post-card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        <div class="post-card-meta">{{ post.date | date: "%-d %b %Y" }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if site.posts.size > 7 %}
+    <div style="text-align:center; margin-top: 3rem;">
+      <a href="/blog/" class="btn btn-secondary">Ver todos los artículos →</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-mark">CS</span>
+      <span class="logo-text">Conecta<strong>Solutions</strong></span>
+    </a>
+
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Inicio</a>
+      <a href="{{ '/blog/' | relative_url }}" class="nav-link {% if page.url contains '/blog' %}active{% endif %}">Blog</a>
+      <a href="{{ '/sobre-nosotros/' | relative_url }}" class="nav-link {% if page.url contains '/sobre' %}active{% endif %}">Nosotros</a>
+      <a href="{{ '/contacto/' | relative_url }}" class="nav-link nav-cta">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
