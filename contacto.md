@@ -18,7 +18,7 @@ permalink: /contacto/
     </p>
 
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; max-width:480px;">
-      <a href="mailto:hola@conectasolutions.com" class="btn btn-primary">
+      <a href="mailto:hhernandez@conectasolutions.net" class="btn btn-primary">
         ✉ Enviar email
       </a>
       <a href="https://linkedin.com/company/conectasolutions" target="_blank" class="btn btn-secondary">
@@ -30,7 +30,7 @@ permalink: /contacto/
 
     <h3>Información de contacto</h3>
     <p>
-      <strong>Email:</strong> hola@conectasolutions.com<br>
+      <strong>Email:</strong> hhernandez@conectasolutions.net<br>
       <strong>Ubicación:</strong> Quito, Ecuador
     </p>
   </div>
