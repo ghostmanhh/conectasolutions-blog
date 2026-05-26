@@ -21,7 +21,7 @@ permalink: /contacto/
       <a href="mailto:hhernandez@conectasolutions.net" class="btn btn-primary">
         ✉ Enviar email
       </a>
-      <a href="href="https://www.linkedin.com/in/hector-hernandez-7aa16b10" target="_blank" class="btn btn-secondary">
+      <a href="https://www.linkedin.com/in/hector-hernandez-7aa16b10" target="_blank" class="btn btn-secondary">
         LinkedIn →
       </a>
     </div>
