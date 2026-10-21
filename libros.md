@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Biblioteca de IA
-permalink: /libros/
+permalink: /libros-recursos/
 ---
 
 <div class="page-header">
