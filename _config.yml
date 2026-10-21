@@ -1,11 +1,11 @@
 title: "Conecta Solutions"
 description: "Infraestructura, ciencia de datos e inteligencia artificial para empresas que quieren crecer con solidez tecnológica."
 tagline: "Infraestructura sólida. Datos inteligentes. IA aplicada."
-url: "https://conectasolutions.com"
+url: "https://conectasolutions.net"
 baseurl: ""
 author:
   name: "Conecta Solutions"
-  email: "hola@conectasolutions.com"
+  email: "hhernandez@conectasolutions.net"
   twitter: "conectasolutions"
   linkedin: "conectasolutions"
 
@@ -13,8 +13,8 @@ author:
 markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
-#paginate: 6
-#paginate_path: "/blog/page:num/"
+paginate: 15
+paginate_path: "/blog/page:num/"
 
 # Plugins
 plugins:
