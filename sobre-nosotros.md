@@ -35,6 +35,7 @@ permalink: /sobre-nosotros/
       <li><strong>Ciencia de datos</strong> — Pipelines de datos, análisis exploratorio, modelado estadístico y visualización</li>
       <li><strong>Inteligencia Artificial</strong> — Modelos de ML en producción, procesamiento de lenguaje natural, automatización inteligente</li>
       <li><strong>Consultoría tecnológica</strong> — Diagnóstico, hoja de ruta y acompañamiento en proyectos de transformación digital</li>
+      <li><strong>Desarrollo de aplicaciones</strong> — Aplicaciones a la medida, construidas con las últimas herramientas, que garantizan escalabilidad hacia la ciencia de datos y la inteligencia artificial</li>
     </ul>
 
     <h2>Este blog</h2>
