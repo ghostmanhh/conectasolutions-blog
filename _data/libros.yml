@@ -1,0 +1,29 @@
+- titulo: "Dive into Deep Learning"
+  autor: "Zhang, Lipton, Li, Smola"
+  tema: "Deep Learning"
+  url: "https://d2l.ai"
+  gratis: true
+
+- titulo: "Deep Learning"
+  autor: "Goodfellow, Bengio, Courville"
+  tema: "Deep Learning"
+  url: "https://www.deeplearningbook.org"
+  gratis: true
+
+- titulo: "Reinforcement Learning: An Introduction"
+  autor: "Sutton y Barto"
+  tema: "Aprendizaje por refuerzo"
+  url: "http://incompleteideas.net/book/the-book.html"
+  gratis: true
+
+- titulo: "Speech and Language Processing"
+  autor: "Jurafsky y Martin"
+  tema: "NLP"
+  url: "https://web.stanford.edu/~jurafsky/slp3/"
+  gratis: true
+
+- titulo: "AI Engineering"
+  autor: "Chip Huyen"
+  tema: "IA en producción"
+  url: "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
+  gratis: false
