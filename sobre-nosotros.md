@@ -37,8 +37,7 @@ permalink: /sobre-nosotros/
       <li><strong>Consultoría tecnológica</strong> — Diagnóstico, hoja de ruta y acompañamiento en proyectos de transformación digital</li>
       <li><strong>Desarrollo de aplicaciones</strong> — Aplicaciones a la medida, construidas con las últimas herramientas, que garantizan escalabilidad hacia la ciencia de datos y la inteligencia artificial</li>
     </ul>
-
-    <h2>Este blog</h2>
+    <h2 style="margin-top:2.5rem;">Este blog</h2>
     <p>
       Escribimos sobre lo que hacemos a diario: configuraciones que resolvieron problemas reales,
       modelos que sí funcionaron en producción, errores que cometimos y cómo los corregimos.
